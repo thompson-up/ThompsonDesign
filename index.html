@@ -1,0 +1,233 @@
+<html>
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thompson | Graphic Designer</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #333;
+      animation: fadeIn 1s ease-in;
+    }
+    header {
+      background: #1c1c1c;
+      color: white;
+      text-align: center;
+      padding: 60px 20px 30px;
+      animation: slideDown 1.2s ease-in-out;
+    }
+    nav a {
+      color: #f0f0f0;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #1da1f2;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: scrollFade 1s ease forwards;
+    }
+    section:nth-of-type(2) { animation-delay: 0.3s; }section:nth-of-type(3) { animation-delay: 0.6s; }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #1c1c1c;
+      color: white;
+      animation: fadeIn 2s ease-in;
+    }
+    .socials a {
+      margin: 0 10px;
+      color: #1da1f2;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+    .socials a:hover {
+      color: #0d8ddb;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes slideDown {
+      from {transform: translateY(-50px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+
+    @keyframes scrollFade {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+  <header style="background: url('work.jpg') center/cover no-repeat; position: relative; height: 300px; color: white;">
+  <div style="background: rgba(0, 0, 0, 0.5); height: 100%; width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <h1 style="font-size: 36px; margin: 0;">THOMPSON</h1>
+    <p style="margin-top: 10px;">Professional Graphic Designer</p>
+  </div>
+  <nav style="position: absolute; bottom: 10px;">
+    <a href="#portfolio" style="color: #000000; margin: 0 12px; text-decoration: none;">Portfolio</a>
+    <a href="#about" style="color: #000000; margin: 0 12px; text-decoration: none;">About</a>
+    <a href="#contact" style="color: #000000; margin: 0 12px; text-decoration: none;">Contact</a>
+  </nav>
+</header>
+  <section id="portfolio">
+     <h2>Portfolio</h2>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f9f9f9;
+    }
+
+    h3 {
+      text-align: center;
+      margin-top: 40px;
+      color: #333;
+    }
+
+    .gallery {
+      display: grid;
+      gap: 15px;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      padding: 10px;
+    }
+
+    .gallery-item {
+      text-align: center;
+      background: white;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      object-fit: cover;
+      margin-bottom: 8px;
+    }
+
+    .caption {
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* Force 5+ columns on large screens */
+    @media (min-width: 1024px) {
+      .gallery {
+        grid-template-columns: repeat(5, 1fr); /
+      }
+    }
+
+    @media (max-width: 600px) {
+      .image-gallery img {
+        width: 45%; /* or 48% for 3 per row on small screens */
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h3>Logo Designs</h3>
+  <div class="gallery">
+    <img src="My Logo.png" alt="Logo">
+    <img src="Logo.png" alt="Logo">
+    <img src="logo2.jpg" alt="Logo">
+    <img src="Logo1.png" alt="Logo">
+    <img src="RISH.jpg" alt="Logo">
+    <img src="new.jpg" alt="Logo">
+  </div>
+
+  <h3>Fliers and Banner</h3>
+  <div class="gallery">
+    <img src="GOG.jpg" alt="Flier">
+    <img src="HOUS.jpg" alt="Flier">
+    <img src="pos.jpg" alt="banner">
+    <img src="pe.jpg" alt="Flier">
+  </div>
+
+  <h3>Church Fliers</h3>
+  <div class="gallery">
+    <img src="mfm.jpg" alt="Graphic">
+    <img src="fm.jpg" alt="Graphic">
+    <img src="N1.jpg" alt="Flier">
+    <img src="shake.jpg" alt="Flier">
+    <img src="miracle.jpg" alt="Flier">
+    <img src="holy spirit.jpg" alt="Flier">
+    <img src="hour.jpg" alt="Flier">
+    <img src="Redemption.jpg" alt="Flier">
+  </div>
+
+  <h3>Mockup Designs</h3>
+  <div class="gallery">
+    <img src="3D.jpg" alt="3D Flier">
+    <img src="book1.jpg" alt="3D image">
+    <img src="Thompson.jpg" alt="3D logo">
+  </div>
+</section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a creative graphic designer specializing in designing and printing of logos, brand identity, jotter, invitation cards, banner, 3D designs, album cover, business cards, calenders, cloth costomize and NIN platic card printing.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+     <p>Hot line: +2349058952270</p>
+    <p>Email: <a href="mailto:adejubethompson@gmail.com">adejubethompson@gmail.com</a></p>
+    <div class="socials">
+      <p>Follow Us on:</p>
+      <a href="https://shorturl.at/hSbY1" target="_blank">WhatsApp</a>
+      <a href="https://www.facebook.com/profile.php?id=100063920447071" target="_blank">Facebook</a>
+      <a href="https://vm.tiktok.com/ZSAe8YXeX/" target="_blank">TikTok</a>
+      <a href="https://www.instagram.com/adejubethompson" target="_blank">Instagram</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 THOMPSON. All rights reserved.</p>
+  </footer>
+</body>
+</html>
